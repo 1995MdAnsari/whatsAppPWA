@@ -1,17 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import '../node_modules/font-awesome/css/font-awesome.min.css'; 
+import "../node_modules/bootstrap/dist/css/bootstrap.css";
+// import MainComponent from "./Components/mainCom";
+// import SimpleKeyEvent from "./eventCom/event"
+// import MainComponent from "./whatsAppCom/mainCom"
+// import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+
+import MainWhatsApp from "./clone/app";
+import swDev from "./clone/swDev";
+
+// import MathExpression from "./mathExpComp/mathExp";
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <MathExpression /> */}
+
+    {/* <MainComponent /> */}
+    {/* <SimpleKeyEvent/> */}
+      <MainWhatsApp />
   </React.StrictMode>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+swDev();
+
+// serviceWorkerRegistration.register();
+
+
