@@ -125,7 +125,7 @@ class MainWhatsApp extends Component{
                     }
                 }
             });
-        // console.log(chat)
+        
         s.chatLst.push(chat);           
         localStorage.setItem('users', JSON.stringify(s.users));
         localStorage.setItem('userChat', JSON.stringify(s.chatLst));
